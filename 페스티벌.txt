@@ -1,0 +1,51 @@
+- 딸기 수확 체험
+- 초대가수
+- 딸기 판매관
+
+
+먹거리
+딸기 디저트 카페
+각종 푸드트럭
+
+
+
+즐길거리
+딸기 잼 만들기
+
+
+-안내도
+의료센터
+미아보호소
+화장실
+체험장소
+무대
+유아 쉼터 및 유모차 대여소
+안내센터 및 물품 보관소
+
+-MD 상품
+딸기 과일차 
+딸기캐릭터 굿즈
+
+
+
+
+<2-5>
+로고 및 스타일 가이드
+
+f05a59
+f59696
+
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Protest+Riot&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Protest+Riot&display=swap');
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Protest Riot', sans-serif;
+
+
+
+@font-face {
+    font-family: 'omyu_pretty';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/omyu_pretty.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

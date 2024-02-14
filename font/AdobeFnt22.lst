@@ -1,0 +1,71 @@
+%!Adobe-FontList 1.22
+%Locale:0x412
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:E:\은지N\딸기페스티벌\Font\.DS_Store
+FileModTime:1692938872
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:CID
+FontName:JalnanGothic
+FamilyName:Jalnan Gothic
+StyleName:Regular
+FullName:Jalnan Gothic
+MenuName:여기어때 잘난체 고딕
+StyleBits:0
+FamilyNameNative:여기어때 잘난체 고딕
+StyleNameNative:Regular
+FullNameNative:여기어때 잘난체 고딕
+WritingScript:Korean
+OutlineFileName:E:\은지N\딸기페스티벌\Font\JalnanGothic.otf
+DataFormat:sfntData
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:1723800
+FileModTime:1692866412
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Jalnan Gothic
+NameArray:3,Mac,4,여기어때 잘난체 고딕
+NameArray:0,Win,1,Jalnan Gothic
+NameArray:0,Win,16,Jalnan Gothic
+NameArray:3,Win,1,여기어때 잘난체 고딕
+NameArray:3,Win,16,여기어때 잘난체 고딕
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:JalnanGothicTTF
+FamilyName:Jalnan Gothic TTF
+StyleName:Regular
+FullName:Jalnan Gothic TTF
+MenuName:여기어때 잘난체 고딕 TTF
+StyleBits:0
+FamilyNameNative:여기어때 잘난체 고딕 TTF
+StyleNameNative:Regular
+FullNameNative:여기어때 잘난체 고딕 TTF
+WritingScript:Korean
+OutlineFileName:E:\은지N\딸기페스티벌\Font\JalnanGothicTTF.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:2234992
+FileModTime:1692867098
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Jalnan Gothic TTF
+NameArray:3,Mac,4,여기어때 잘난체 고딕 TTF
+NameArray:0,Win,1,Jalnan Gothic TTF
+NameArray:0,Win,16,Jalnan Gothic TTF
+NameArray:3,Win,1,여기어때 잘난체 고딕 TTF
+NameArray:3,Win,16,여기어때 잘난체 고딕 TTF
+%EndFont
+
