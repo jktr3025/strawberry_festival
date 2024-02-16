@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/___________________E1B_icon.ico">
     <title>남양주 딸기 축제</title>
     <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/jquery-ui.js"></script>
     <script src="js/fullpage.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/my.script.js"></script>
 </head>
+
 <body>
     <div class="wrap">
         <header class="header">
@@ -27,10 +31,10 @@
                 </ul><!-- menu -->
             </nav><!-- nav -->
         </header>
-        
+
         <div class="full">
             <div class="section" id="section0">
-                    <video class="video" src="img/festival2.mp4" autoplay="true"  muted="true" loop="true"></video>
+                <video class="video" src="img/festival2.mp4" autoplay="true" muted="true" loop="true"></video>
             </div><!-- section0 -->
             <div class="section" id="section1">
                 <div class="section_inner">
@@ -48,11 +52,11 @@
                             </h2>
                             <p>
                                 딸기 체험과 휴양을 한 번에 할 수 있는<br>
-                                <span>전국 유일의 딸기테마파크</span>  <br>
+                                <span>전국 유일의 딸기테마파크</span> <br>
                                 딸기향 농촌 테마파크에서 <br>
                                 남양주 딸기 축제가 열립니다. <br>
 
-                                설향 /  하이베리 / 비타베리 / 킹스베리 <br>
+                                설향 / 하이베리 / 비타베리 / 킹스베리 <br>
                                 사계절 딸기를 맛보실 수 있습니다. <br>
 
                                 딸기 수확 외에도 다양한 체험 프로그램이 준비되어 있고, <br>
@@ -61,7 +65,14 @@
                             </p>
                         </div><!-- s1_mean -->
                         <div class="s1_map">
-                            
+                            <div class="info">
+                                <img src="img/info.png" alt="info">
+                                <span>안내데스크</span>
+                            </div>
+                            <div class="rest">
+                                <img src="img/here.png" alt="info">
+                                <span>화장실</span>
+                            </div>
                         </div><!-- s1_map -->
                     </div><!-- section1_cont -->
                 </div><!-- section_inner -->
@@ -69,19 +80,108 @@
             <div class="section" id="section2">
                 <div class="section_inner">
                     <h2>체험 프로그램</h2>
+                            <div class="sec2_img">
+                                <div class="img_r">
+                                    <p>새콤 달콤 디저트부터</p>
+                                    <img class="sec2_img1" src="img/ricecake.png" alt="ricecake">
+                                    <img class="sec2_img2" src="img/yogurt.png" alt="yogurt">
+                                    <img class="sec2_img3" src="img/cookie.png" alt="cookie">
+                                </div><!-- img_r -->
+                                <div class="img_l">
+                                    <p>귀여운 소품까지!</p>
+                                    <img class="sec2_img4" src="img/wallet.jpg" alt="wallet">
+                                    <img class="sec2_img5" src="img/pouch.png" alt="pouch">
+                                    <img class="sec2_img6" src="img/wash.png" alt="wash">
+                                    <img class="sec2_img7" src="img/strap.png" alt="strap">
+                                </div><!-- img_l -->
+                            </div><!-- sec2_img -->
+
+                        <div class="sec2_cont">
+                            <div class="ticket">
+
+                            </div><!-- ticket -->
+                            <div class="more">더 알아보기</div>
+                            <div class="go">예약하기</div>
+                        </div><!-- sec2_cont -->
+
 
                 </div><!-- section_inner -->
             </div><!-- section2 -->
             <div class="section" id="section3">
                 <div class="section_inner">
                     <h2>공연 라인업</h2>
+                    <div class="line">
+                    <div class="stage">
+                        <div class="flip">
+                            <div class="face front">앞면</div>
+                            <div class="face back">
+                                <div class="backbg">
+                                    <p>라이즈<br>2월 15일</p>
+                                    </div><!-- backbg -->
+                            </div><!-- back -->
+                        </div><!-- flip -->
+                    </div><!-- stage -->
+                    <div class="stage">
+                        <div class="flip">
+                            <div class="face front">앞면</div>
+                            <div class="face back">
+                                <div class="backbg">
+                                    <p>권은비<br>2월 16일</p>
+                                    </div><!-- backbg -->
+                            </div><!-- back -->
+                        </div><!-- flip -->
+                    </div><!-- stage -->
+                    <div class="stage">
+                        <div class="flip">
+                            <div class="face front">앞면</div>
+                            <div class="face back">
+                                <div class="backbg">
+                                    <p>악동뮤지션<br>2월 17일</p>
+                                    </div><!-- backbg -->                              
+                            </div><!-- back -->
+                        </div><!-- flip -->
+                    </div><!-- stage -->
+                    <div class="stage">
+                        <div class="flip">
+                            <div class="face front">앞면</div>
+                            <div class="face back">
+                                <div class="backbg">
+                                    <p>임영웅<br>2월 18일</p>
+                                    </div><!-- backbg -->
+                            </div><!-- back -->
+                        </div><!-- flip -->
+                    </div><!-- stage -->
+                    </div><!-- line -->
 
                 </div><!-- section_inner -->
             </div><!-- section3 -->
             <div class="section" id="section4">
                 <div class="section_inner">
                     <h2>MD 상품</h2>
-
+                    <div class="sec4_cont">
+                    <ul class="md_list">
+                        <li>
+                            <a href="#"></a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <p></p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <p></p>
+                        </li>
+                    </ul><!-- md_list -->
+                </div><!-- sec4_cont -->
                 </div><!-- section_inner -->
             </div><!-- section4 -->
             <div class="section" id="section5">
@@ -98,4 +198,5 @@
 
     </div><!-- wrap -->
 </body>
+
 </html>
