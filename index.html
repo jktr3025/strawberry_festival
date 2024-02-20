@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/___________________E1B_icon.ico">
     <title>남양주 딸기 축제</title>
+    <link rel="shortcut icon" href="img/___________________E1B_icon.ico">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,32 +13,136 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/fullpage.js"></script>
     <script src="js/slick.js"></script>
-    <script src="js/my.script.js"></script>
+    <script src="js/myscript.js"></script>
+
+    <script lang="java">
+        // $(document).ready(function () {
+        //     $('#fullpage').fullpage({
+        //             //options here
+        //             autoScrolling: true,
+        //             scrollHorizontally: true,
+        //             // navigation: true,
+        //             menu: ".nav",
+        //             anchors: ["section1", "section2", "section3", "section4", "section5", "section6"],
+        //             afterLoad: function (index) {
+        //                 var n = index.index;
+        //                 console.log("n :", n)
+        //                 if (n == 1 || n == 3) {
+        //                     $(".img_r").addClass("on");
+        //                     $(".img_l").addClass("on");
+        //                     $(".sec2_img").addClass("on");
+        //                 } else {
+        //                     $(".img_r").removeClass("on");
+        //                     $(".img_l").removeClass("on");
+        //                     $(".sec2_img").removeClass("on");
+        //                 } //if
+        //             } //afterLoad
+        //         },
+        //         $(".md_list").slick({
+        //             slidesToShow: 5,
+        //             slidesToScroll: 2,
+        //             autoplay: true,
+        //             autoplaySpeed: 2000,
+        //             dots: false,
+        //             arrows: false,
+        //         }) // slick
+
+                
+
+        //     ); //fullpage
+
+
+
+
+        // }); //jquery
+    </script>
+<script lang="java">
+    // var originalId , cloneId 
+    // window.addEventListener("DOMContentLoaded", function(){
+
+    //     // 롤링 배너 복제본 생성
+    //     let roller = document.querySelector(".roller");
+    //     roller.id = "roller1";
+
+    //     let clone =  roller.cloneNode(true);
+    //     clone.id = "roller2";
+    //     document.querySelector(".wrap").appendChild(clone); //부착
+
+    //     //원본, 복제본 배너 위치 지정
+    //     document.querySelector("#roller1").style.left = "0px"
+    //     document.querySelector("#roller2").style.left = document.querySelector(".roller ul").offsetWidth + "px";
+
+    //     //클래스 할당
+    //     roller.classList.add("original");
+    //     clone.classList.add("clone");
+
+    //     //인터벌 매서드 애니메이션
+    //     let rollerWidth = document.querySelector(".roller ul").offsetWidth;
+    //     let betweenDistance = 1;
+
+    //     //롤링 시작
+    //     function startRoller(){
+    //         originalId = window.setInterval(betweenrollcallback, parseInt(3000/100),betweenDistance, document.querySelector("#roller1") );
+    //         cloneId = window.setInterval(betweenrollcallback, parseInt(3000/100),betweenDistance, document.querySelector("#roller2") );
+    //     }//
+
+
+
+    //     function betweenrollcallback(d, roller){
+    //         let left = parseInt(roller.style.left);
+    //         roller.style.left = (left - d) + "px" ; //이동
+    //         //조건부 리셋
+    //         if(rollerWidth + (left - d) <= 0){
+    //             roller.style.left = rollerWidth + "px";
+    //         }
+    //     }
+
+    //     startRoller(); //롤링 초기화
+
+
+    //     //롤링 정지
+    //     function stopRoller(){
+    //         clearInterval(originalId);
+    //         clearInterval(cloneId);
+    //     }
+        
+    //     //마우스 호버시 롤리 멈추기, 다시 롤리 되기
+    //     document.getElementById("roller1").addEventListener("mouseover", ()=> {stopRoller()} );
+    //     document.getElementById("roller2").addEventListener("mouseover", ()=> {stopRoller()} );
+    //     document.getElementById("roller1").addEventListener("mouseout", ()=> {startRoller()} );
+    //     document.getElementById("roller2").addEventListener("mouseout", ()=> {startRoller()} );
+
+
+    // })//
+</script>
+    </style>
 </head>
 
 <body>
-    <div class="wrap">
+
+    <div class="wrap1">
         <header class="header">
             <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>
             <nav class="nav">
                 <ul id="menu">
-                    <li><a href="#section0">처음으로</a></li>
-                    <li><a href="#section1">남양주 딸기 축제</a></li>
-                    <li><a href="#section2">체험 프로그램</a></li>
-                    <li><a href="#section3">공연 라인업</a></li>
-                    <li><a href="#section4">MD 상품</a></li>
-                    <li><a href="#section5">커뮤니티</a></li>
-                </ul><!-- menu -->
-            </nav><!-- nav -->
+                    <li><a href="#section1" data-menuanchor="first1">남양주 딸기 축제</a></li>
+                    <li><a href="#section2" data-menuanchor="first2">축제 소개</a></li>
+                    <li><a href="#section3" data-menuanchor="first3">체험 예약</a></li>
+                    <li><a href="#section4" data-menuanchor="first4">공연 라인업</a></li>
+                    <li><a href="#section5" data-menuanchor="first5">MD 상품</a></li>
+                    <li><a href="#section6" data-menuanchor="first6">커뮤니티</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="full">
-            <div class="section" id="section0">
-                <video class="video" src="img/festival2.mp4" autoplay="true" muted="true" loop="true"></video>
-            </div><!-- section0 -->
-            <div class="section" id="section1">
+
+        <div id="fullpage">
+            <div class="section">
+                <video class="video" src="포토,일러,프리미어/festival2.mp4" data-autoplay muted loop></video>
+            </div>
+            <div class="section">
                 <div class="section_inner">
-                    <h2>남양주 딸기 축제</h2>
+                    <h2>남양주 딸기 축제란?</h2>
                     <div class="section1_cont">
 
                         <div class="s1_img">
@@ -65,138 +169,428 @@
                             </p>
                         </div><!-- s1_mean -->
                         <div class="s1_map">
-                            <div class="info">
+                            <div class="info1">
                                 <img src="img/info.png" alt="info">
-                                <span>안내데스크</span>
-                            </div>
-                            <div class="rest">
+                            </div><!-- info1 -->
+                            <div class="rest1">
                                 <img src="img/here.png" alt="info">
-                                <span>화장실</span>
-                            </div>
+                            </div><!-- rest1 -->
+                            <div class="info2">
+                                <img src="img/info.png" alt="info">
+                            </div><!-- info2 -->
+                            <div class="rest2">
+                                <img src="img/here.png" alt="info">
+                            </div><!-- rest2 -->
                         </div><!-- s1_map -->
                     </div><!-- section1_cont -->
                 </div><!-- section_inner -->
-            </div><!-- section1 -->
-            <div class="section" id="section2">
+            </div>
+            <div class="section">
                 <div class="section_inner">
-                    <h2>체험 프로그램</h2>
-                            <div class="sec2_img">
-                                <div class="img_r">
-                                    <p>새콤 달콤 디저트부터</p>
-                                    <img class="sec2_img1" src="img/ricecake.png" alt="ricecake">
-                                    <img class="sec2_img2" src="img/yogurt.png" alt="yogurt">
-                                    <img class="sec2_img3" src="img/cookie.png" alt="cookie">
-                                </div><!-- img_r -->
-                                <div class="img_l">
-                                    <p>귀여운 소품까지!</p>
-                                    <img class="sec2_img4" src="img/wallet.jpg" alt="wallet">
-                                    <img class="sec2_img5" src="img/pouch.png" alt="pouch">
-                                    <img class="sec2_img6" src="img/wash.png" alt="wash">
-                                    <img class="sec2_img7" src="img/strap.png" alt="strap">
-                                </div><!-- img_l -->
-                            </div><!-- sec2_img -->
+                    <h2>체험 예약</h2>
+                    <div class="sec2_img">
+                        <div class="img_r">
+                            <p>새콤 달콤 디저트부터</p>
+                            <img class="sec2_img1" src="img/ricecake.png" alt="ricecake">
+                            <img class="sec2_img2" src="img/yogurt.png" alt="yogurt">
+                            <img class="sec2_img3" src="img/cookie.png" alt="cookie">
+                        </div><!-- img_r -->
+                        <div class="img_l">
+                            <p>귀여운 소품까지!</p>
+                            <img class="sec2_img4" src="img/wallet.jpg" alt="wallet">
+                            <img class="sec2_img5" src="img/pouch.png" alt="pouch">
+                            <img class="sec2_img6" src="img/wash.png" alt="wash">
+                            <img class="sec2_img7" src="img/strap.png" alt="strap">
+                        </div><!-- img_l -->
+                    </div><!-- sec2_img -->
 
-                        <div class="sec2_cont">
-                            <div class="ticket">
-
-                            </div><!-- ticket -->
-                            <div class="more">더 알아보기</div>
-                            <div class="go">예약하기</div>
-                        </div><!-- sec2_cont -->
+                    <div class="sec2_cont">
+                        <div class="ticket">
+                            <div class="ticket1"><img src="img/ticket1.jpg" alt=""></div>
+                            <div class="ticket2"><img src="img/ticket2.jpg" alt=""></div>
+                        </div><!-- ticket -->
+                        <div class="sec2_cont_txt1">
+                            <p> 체험프로그램 보러가기</p>
+                            <img src="img/icon _arrow right_.png" alt="">
+                        </div><!-- sec2_cont_txt1 -->
+                        <form action="#" class="form1">
+                            <select name="date" id="date">
+                                <option value="d1">2월15일 - 10시</option>
+                                <option value="d1">2월15일 - 14시</option>
+                                <option value="d1">2월15일 - 16시</option>
+                                <option value="d1">2월16일 - 10시</option>
+                                <option value="d1">2월16일 - 14시</option>
+                                <option value="d1">2월16일 - 16시</option>
+                                <option value="d1">2월17일 - 10시</option>
+                                <option value="d1">2월17일 - 14시</option>
+                                <option value="d1">2월17일 - 16시</option>
+                                <option value="d1">2월18일 - 10시</option>
+                                <option value="d1">2월18일 - 14시</option>
+                                <option value="d1">2월18일 - 16시</option>
+                            </select>
+                            <select name="program" id="program">
+                                <option value="p1">♥상큼달콤 생딸기망개떡♥</option>
+                                <option value="p1">♥떠먹는 딸기 케이크♥</option>
+                                <option value="p1">♥촉촉 딸기 버터쿠키♥</option>
+                                <option value="p1">♥쪼꼬만 딸기 뜨개지갑♥</option>
+                                <option value="p1">♥핸드메이드 딸기 파우치♥</option>
+                                <option value="p1">♥뽀득뽀득 딸기 수세미♥</option>
+                                <option value="p1">♥딸기 비즈 폰스트랩♥</option>
+                            </select>
+                            <input type="number" placeholder="신청 인원">
+                            <input type="submit" value="예약하기">
+                        </form>
+                    </div><!-- sec2_cont -->
 
 
                 </div><!-- section_inner -->
-            </div><!-- section2 -->
-            <div class="section" id="section3">
+            </div>
+            <div class="section">
                 <div class="section_inner">
                     <h2>공연 라인업</h2>
                     <div class="line">
-                    <div class="stage">
-                        <div class="flip">
-                            <div class="face front">앞면</div>
-                            <div class="face back">
-                                <div class="backbg">
-                                    <p>라이즈<br>2월 15일</p>
+                        <div class="stage">
+                            <div class="flip">
+                                <div class="face front">앞면</div>
+                                <div class="face back">
+                                    <div class="backbg">
+                                        <p>라이즈<br>2월 15일</p>
                                     </div><!-- backbg -->
-                            </div><!-- back -->
-                        </div><!-- flip -->
-                    </div><!-- stage -->
-                    <div class="stage">
-                        <div class="flip">
-                            <div class="face front">앞면</div>
-                            <div class="face back">
-                                <div class="backbg">
-                                    <p>권은비<br>2월 16일</p>
+                                </div><!-- back -->
+                            </div><!-- flip -->
+                        </div><!-- stage -->
+                        <div class="stage">
+                            <div class="flip">
+                                <div class="face front">앞면</div>
+                                <div class="face back">
+                                    <div class="backbg">
+                                        <p>권은비<br>2월 16일</p>
                                     </div><!-- backbg -->
-                            </div><!-- back -->
-                        </div><!-- flip -->
-                    </div><!-- stage -->
-                    <div class="stage">
-                        <div class="flip">
-                            <div class="face front">앞면</div>
-                            <div class="face back">
-                                <div class="backbg">
-                                    <p>악동뮤지션<br>2월 17일</p>
-                                    </div><!-- backbg -->                              
-                            </div><!-- back -->
-                        </div><!-- flip -->
-                    </div><!-- stage -->
-                    <div class="stage">
-                        <div class="flip">
-                            <div class="face front">앞면</div>
-                            <div class="face back">
-                                <div class="backbg">
-                                    <p>임영웅<br>2월 18일</p>
+                                </div><!-- back -->
+                            </div><!-- flip -->
+                        </div><!-- stage -->
+                        <div class="stage">
+                            <div class="flip">
+                                <div class="face front">앞면</div>
+                                <div class="face back">
+                                    <div class="backbg">
+                                        <p>악동뮤지션<br>2월 17일</p>
                                     </div><!-- backbg -->
-                            </div><!-- back -->
-                        </div><!-- flip -->
-                    </div><!-- stage -->
+                                </div><!-- back -->
+                            </div><!-- flip -->
+                        </div><!-- stage -->
+                        <div class="stage">
+                            <div class="flip">
+                                <div class="face front">앞면</div>
+                                <div class="face back">
+                                    <div class="backbg">
+                                        <p>임영웅<br>2월 18일</p>
+                                    </div><!-- backbg -->
+                                </div><!-- back -->
+                            </div><!-- flip -->
+                        </div><!-- stage -->
                     </div><!-- line -->
 
                 </div><!-- section_inner -->
-            </div><!-- section3 -->
-            <div class="section" id="section4">
+            </div>
+            <div class="section">
                 <div class="section_inner">
                     <h2>MD 상품</h2>
                     <div class="sec4_cont">
-                    <ul class="md_list">
-                        <li>
-                            <a href="#"></a>
-                            <p></p>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                            <p></p>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                            <p></p>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                            <p></p>
-                        </li>
-                        <li>
-                            <a href="#"></a>
-                            <p></p>
-                        </li>
-                    </ul><!-- md_list -->
-                </div><!-- sec4_cont -->
+                        <ul class="md_list">
+                            <li>
+                                <a href="#">
+                                    <img src="img/dool.jpg" alt="case">
+                                    <div class="md_list_txt">
+                                        <span>"딸기딸기해" 귀염뽀짝 딸기인형 키링</span>
+                                        <p>24,500원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/nail.jpg" alt="nail">
+                                    <div class="md_list_txt">
+                                        <span>"디어푸딩" 토끼딸기잼 네일</span>
+                                        <p>21,900원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/pats.jpg" alt="pats">
+                                    <div class="md_list_txt">
+                                        <span>"라온밍" 딸기 품은 토끼 파츠 세트</span>
+                                        <p>6,500원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/choco.jpg" alt="choco">
+                                    <div class="md_list_txt">
+                                        <span>"간식여왕" 동결건조 딸기 초촐릿</span>
+                                        <p>10,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/kings.jpg" alt="kings">
+                                    <div class="md_list_txt">
+                                        <span>"클로렐라" 킹스베리 1.8KG</span>
+                                        <p>23,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/bareun.jpg" alt="bareun">
+                                    <div class="md_list_txt">
+                                        <span>"바른청년" 고농축착즙청</span>
+                                        <p>19,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/case.jpg" alt="case">
+                                    <div class="md_list_txt">
+                                        <span>"헤이주노" 딸기 케이크 똥츄</span>
+                                        <p>10,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/macaron.jpg" alt="macaron">
+                                    <div class="md_list_txt">
+                                        <span>"내다움" 생딸기 대왕조개롱</span>
+                                        <p>5,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/jam.jpg" alt="jam">
+                                    <div class="md_list_txt">
+                                        <span>"농부생활" 리얼 수제 딸기청 1.1KG</span>
+                                        <p>11,900원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="img/teaset.jpg" alt="teaset">
+                                    <div class="md_list_txt">
+                                        <span>"니트우연" 딸기 뜨개 티코스터</span>
+                                        <p>10,000원</p>
+                                        <img src="img/icon _heart_1.png" alt="heart">
+                                        <img src="img/icon _cart_.png" alt="cart">
+                                    </div><!-- md_list_txt -->
+                                </a>
+                            </li>
+                        </ul><!-- md_list -->
+                    </div><!-- sec4_cont -->
                 </div><!-- section_inner -->
-            </div><!-- section4 -->
-            <div class="section" id="section5">
+            </div>
+
+            <div class="section section6">
                 <div class="section_inner">
                     <h2>커뮤니티</h2>
-
+                    <div class="sec6_cont">
+                        <div class="notice">
+                            <h3 class="on">공지사항</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>2024 남양주딸기축제 체험&홍보 판매부스 선정 결과</p>
+                                    </a>
+                                    <span class="n_1">1148</span>
+                                    <span class="n_2">2024-02-02</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2024 남양주딸기축제 푸드트럭 선정 결과</p>
+                                    </a>
+                                    <span class="n_1">506</span>
+                                    <span class="n_2">2024-01-31</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2024 남양주딸기축제 딸기수확체험농가 모집 공고</p>
+                                    </a>
+                                    <span class="n_1">334</span>
+                                    <span class="n_2">2024-01-28</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2024 남양주딸기축제 체험 홍보판매부스 공모</p>
+                                    </a>
+                                    <span class="n_1">2515</span>
+                                    <span class="n_2">2024-01-22</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2024 남양주딸기축제 푸드트럭 참가자 모집</p>
+                                    </a>
+                                    <span class="n_1">1512</span>
+                                    <span class="n_2">2024-01-16</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2023 남양주딸기축제 트로트 가요제 참가자 모집</p>
+                                    </a>
+                                    <span class="n_1">2646</span>
+                                    <span class="n_2">2023-02-01</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>2023 남양주딸기축제 디저트 카페 운영 참여자 모집</p>
+                                    </a>
+                                    <span class="n_1">714</span>
+                                    <span class="n_2">2024-01-25</span>
+                                </li>
+                            </ul>
+                        </div><!-- notice -->
+                        <div class="question">
+                            <h3>문의사항</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p>16일 비소식 있는데 비가 와도 운영하나요?</p>
+                                    </a>
+                                    <span class="n_1">love&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-02-15</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>아이와 함께 가려는데 유아휴게실이 있나요?</p>
+                                    </a>
+                                    <span class="n_1">winter&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-02-11</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>주차장 요금이 궁급합니다.</p>
+                                    </a>
+                                    <span class="n_1">new&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-02-04</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>반려동물 입장이 가능한가요?</p>
+                                    </a>
+                                    <span class="n_1">my&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-01-26</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>푸드트럭 결제 시, 남양주지역화페로 결제 되나요?</p>
+                                    </a>
+                                    <span class="n_1">hue&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-01-21</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>짐 보관 가능한가요?</p>
+                                    </a>
+                                    <span class="n_1">rose&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-01-20</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p>체험권 현장 구매도 가능한가요?</p>
+                                    </a>
+                                    <span class="n_1">sun&#42;&#42;&#42;&#42;</span>
+                                    <span class="n_2">2024-01-17</span>
+                                </li>
+                            </ul>
+                        </div><!-- question -->
+                    </div><!-- sec6_cont -->
                 </div><!-- section_inner -->
-            </div><!-- section5 -->
-        </div><!-- full -->
-
-        <footer class="footer">
-
-        </footer><!-- footer -->
-
-    </div><!-- wrap -->
+                <div class="container">
+                    <div class="rollingbanner">
+                        <div class="wrap">
+                            <div class="roller">
+                                <ul>
+                                    <!-- <li><a href="#">더드림농장</a></li>
+                                    <li><a href="#">모아농장</a></li>
+                                    <li><a href="#">딸기정원</a></li>
+                                    <li><a href="#">아띠농장</a></li>
+                                    <li><a href="#">한사랑농장</a></li> 
+                                    <li><a href="#">허니스윗팜</a></li> 
+                                    <li><a href="#">딸기밥상</a></li> 
+                                    <li><a href="#">바른청년</a></li>
+                                    <li><a href="#">써니네농장</a></li>
+                                    <li><a href="#">기쁨농장</a></li>
+                                    <li><a href="#">그린바스켓</a></li>
+                                    <li><a href="#">다솜농장</a></li>
+                                    <li><a href="#">내다움농장</a></li>
+                                    <li><a href="#">농부생활</a></li>
+                                    <li><a href="#">자연농장</a></li> -->
+                                    <!-- <li><a href="#">767321231</a></li>
+                                    <li><a href="#">524312136</a></li>
+                                    <li><a href="#">12327875312</a></li>
+                                    <li><a href="#">12135753212</a></li>
+                                    <li><a href="#">113287321</a></li>
+                                    <li><a href="#">212656578</a></li>
+                                    <li><a href="#">732198752103</a></li>
+                                    <li><a href="#">1111111123241</a></li>
+                                    <li><a href="#">1357432121</a></li>
+                                    <li><a href="#">767321231</a></li>
+                                    <li><a href="#">524312136</a></li>
+                                    <li><a href="#">12327875312</a></li>
+                                    <li><a href="#">12135753212</a></li>
+                                    <li><a href="#">113287321</a></li>
+                                    <li><a href="#">212656578</a></li>
+                                    <li><a href="#">732198752103</a></li> -->
+                                    <li><a href="#">전국 유일한 딸기 테마 파크, 딸기향 농촌 테마 파크에서
+                                        2024년 2월 15일부터 2월 18일까지 남양주 딸기 축제가 열립니다.
+                                        다양한 먹거리와 체험이 준비되어 있으니 시민 여러분의 많은 참여 부탁드립니다.    
+                                    </a></li>
+                                </ul>
+                            </div><!-- roller -->
+                        </div><!-- wrap -->
+                    </div><!-- rollingbanner -->
+                </div><!-- container -->
+                <footer id="footer">
+                    <div class="f_inner">
+                        <div class="f_menu">
+                            <a href="#">개인정보취급방침</a>
+                            <a href="#">집단이메일수집거부</a>
+                            <a href="#">저작권정책</a>
+                            <a href="#">오시는길</a>
+                        </div><!-- f_menu -->
+                        <div class="adress">
+                            <p>(76212)경기도 남양주시 딸기향 농촌 테마파크</p>
+                            <p>TEL&#41;031-432-7351</p>
+                            <p>FAX&#41;031-437-7321</p>
+                        </div><!-- adress -->
+                        <div class="copy">COPYRIGHT 2024 NAMYANGJU CITY. ALL RIGHTS RESERVED</div><!-- copy -->
+                    </div><!-- f_inner -->
+                </footer><!-- footer -->
+            </div><!-- section -->
+        </div><!-- fullpage -->
+</div><!-- wrap1 -->
 </body>
 
 </html>
