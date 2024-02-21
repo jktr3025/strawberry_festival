@@ -1,3 +1,7 @@
+window.onload = function(){
+    $(".pop, .modal").show();
+}//
+
 $(document).ready(function () {
     $('#fullpage').fullpage({
             //options here
@@ -39,9 +43,14 @@ $(document).ready(function () {
     
             $(".sec6_cont ul").removeClass("on");
             $(this).next().addClass("on");
+        }),//
+
+        //pop
+        $(".close1, .close2").click(function(){
+            $(".pop, .modal").hide();
         })//
-        ); //fullpage
-        
+
+        )//fullpage
 
 }); //jquery
 
@@ -99,6 +108,7 @@ window.addEventListener("DOMContentLoaded", function(){
     document.getElementById("roller2").addEventListener("mouseover", ()=> {stopRoller()} );
     document.getElementById("roller1").addEventListener("mouseout", ()=> {startRoller()} );
     document.getElementById("roller2").addEventListener("mouseout", ()=> {startRoller()} );
-
-
 })//window.addEventListener
+
+
+
