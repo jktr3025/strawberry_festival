@@ -118,7 +118,6 @@ svg{
     animation: menuani 0.5s forwards;
     background-color: #f05a59;
     height: 3px;
-
 }
 
 
@@ -135,7 +134,7 @@ svg{
 .section_inner {
     width: 1280px;
     margin: 140px auto 0px;
-    /* border: 1px solid red; */
+    /* border: 1px solid darkblue; */
     overflow: hidden;
 }
 
@@ -148,7 +147,6 @@ svg{
 #section1 {
     overflow: hidden;
 }
-
 .video {
     width: 1280px;
     height: 720px;
@@ -158,7 +156,7 @@ svg{
 
 #section2 {
     /* height: 100vh; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .section1_cont {
@@ -176,7 +174,6 @@ svg{
 
 .s1_mean {
     width: 384px;
-    /* border: 1px solid red; */
     height: 300px;
     padding: 20px;
 }
@@ -219,6 +216,7 @@ svg{
 }
 .s1_map img{
     width: 20px;
+    /* border: 1px solid darkblue; */
     position: absolute;
     left: 50%;
     top: 0;
@@ -307,7 +305,7 @@ svg{
 .img_l{
     width: 50%;
     /* border: 1px solid darkblue; */
-    text-align-last: left;
+    text-align: left;
     padding: 30px;
     position: relative;
     position: absolute;
@@ -321,34 +319,6 @@ svg{
 .img_l.on{
     right: 0;   
     animation: pro 1s 0.5s forwards;
-}
-
-.sec2_cont{
-    width: 100%;
-    height: 320px;
-    /* border: 1px solid rebeccapurple; */
-    padding-top: 10px;
-}
-.sec2_cont .ticket{
-    width: 804px;
-    height: 204px;
-    margin: 0 auto;
-    display: flex;
-}
-
-.ticket1{
-    border: 1px solid black;
-    width: 602px;
-    height: 202px;
-}
-.ticket2{
-    width: 202px;
-    height: 202px;
-    border: 1px solid black;
-    border-left:2px dashed black ;
-    transform-origin: left bottom;
-    animation: ticket_move 1.5s infinite alternate;
-    transition: all 1.5s;
 }
 
 .sec2_img1{
@@ -380,6 +350,33 @@ svg{
     left: 380px;
     top: 70px;
 }
+.sec2_cont{
+    width: 100%;
+    height: 320px;
+    /* border: 1px solid rebeccapurple; */
+    padding-top: 10px;
+}
+.sec2_cont .ticket{
+    width: 804px;
+    height: 204px;
+    margin: 0 auto;
+    display: flex;
+}
+.ticket1{
+    border: 1px solid black;
+    width: 602px;
+    height: 202px;
+}
+.ticket2{
+    width: 202px;
+    height: 202px;
+    border: 1px solid black;
+    border-left:2px dashed black ;
+    transform-origin: left bottom;
+    animation: ticket_move 1.5s infinite alternate;
+    transition: all 1.5s;
+}
+
 .sec2_cont_txt1{
     width: 170px;
     height: 40px;
@@ -520,16 +517,44 @@ svg{
 .md_list li{
     width: 200px !important;
     height: 300px;
-    /* border: 1px solid royalblue; */
     /* overflow: hidden; */
 }
 .md_list li a{
     display: block;
     width: 200px;
+    height: 300px;
     position: relative;
+    background-size: 200px 300px;
 }
-.md_list li img{
-    /* width: 100%; */
+.md_list li.md_list1 a{
+    background-image: url("../img/dool.jpg");
+}
+.md_list li.md_list2 a{
+    background-image: url("../img/nail.jpg");
+}
+.md_list li.md_list3 a{
+    background-image: url("../img/pats.jpg");
+}
+.md_list li.md_list4 a{
+    background-image: url("../img/choco.jpg");
+}
+.md_list li.md_list5 a{
+    background-image: url("../img/kings.jpg");
+}
+.md_list li.md_list6 a{
+    background-image: url("../img/bareun.jpg");
+}
+.md_list li.md_list7 a{
+    background-image: url("../img/case.jpg");
+}
+.md_list li.md_list8 a{
+    background-image: url("../img/macaron.jpg");
+}
+.md_list li.md_list9 a{
+    background-image: url("../img/jam.jpg");
+}
+.md_list li.md_list10 a{
+    background-image: url("../img/teaset.jpg");
 }
 .md_list li .md_list_txt{
     position: absolute;
@@ -555,7 +580,7 @@ svg{
     font-size: 18px;
 }
 .md_list_txt img{
-    width: 15;
+    width: 15px;
     height: 15px;
     position: absolute;
     bottom: 10px;
@@ -577,9 +602,11 @@ svg{
     width: 1152px;
     height: 400px;
     margin: 0 auto;
+    /* border: 1px solid rebeccapurple; */
 }
 .sec6_cont div{
     /* border: 1px solid rebeccapurple; */
+    /* background-color: aquamarine; */
     position: absolute;
     width: 1152px;
     height: 400px;
@@ -610,7 +637,6 @@ svg{
     flex-direction: column;
     justify-content: space-between;
     height: 350px;
-    border-top: 5px solid r;
     position: absolute;
     left: 0;
     top: 50px;
@@ -633,7 +659,6 @@ svg{
 .sec6_cont ul li a{
     width: 60%;
     cursor: pointer;
-
     /* border: 1px solid navy; */
 }
 .sec6_cont ul.on li:hover{ 

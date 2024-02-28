@@ -1,8 +1,10 @@
 window.onload = function(){
-    $(".pop, .modal").show();
 }//
 
+
 $(document).ready(function () {
+    if($(window).width() > 430){ 
+        
     $('#fullpage').fullpage({
             //options here
             autoScrolling: true,
@@ -10,6 +12,7 @@ $(document).ready(function () {
             // navigation: true,
             menu: ".nav",
             anchors: ["section1", "section2", "section3", "section4", "section5", "section6"],
+            // responsiveWidth:430,
             afterLoad: function (index) {
                 var n = index.index;
                 console.log("n :", n)
@@ -40,19 +43,35 @@ $(document).ready(function () {
         $(".sec6_cont h3").click(function(){
             $(".sec6_cont h3").removeClass("on");
             $(this).addClass("on");
-    
+            
             $(".sec6_cont ul").removeClass("on");
             $(this).next().addClass("on");
         }),//
-
+        
+        $(".pop, .modal").show(),
         //pop
         $(".close1, .close2").click(function(){
             $(".pop, .modal").hide();
         })//
-
         )//fullpage
+    }//if430보다 클 때
 
+    
+    $(".pop, .modal").hide();
+    $(".md_list").slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 800,
+        dots: false,
+        arrows: false,
+    })
+    $(".sec6_cont h3").addClass("on");
+    $(".sec6_cont ul").removeClass("on");
 }); //jquery
+
+
+
 
 var originalId , cloneId 
 window.addEventListener("DOMContentLoaded", function(){
