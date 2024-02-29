@@ -596,18 +596,21 @@ svg{
     /* position: relative; */
 }
 .section6 .section_inner{
+    /* border: 1px solid navy; */
 
 }
 .sec6_cont{
     width: 1152px;
     height: 400px;
     margin: 0 auto;
+    position: relative;
     /* border: 1px solid rebeccapurple; */
 }
 .sec6_cont div{
     /* border: 1px solid rebeccapurple; */
-    /* background-color: aquamarine; */
     position: absolute;
+    left: 0;
+    top: 0;
     width: 1152px;
     height: 400px;
 }
@@ -829,7 +832,7 @@ svg{
     z-index: 100;
     background-clip: padding-box;
     display: none;
-    background-image: url("../img/pop.jpg");
+    background-image: url("../img/pop_2.png");
     background-repeat: no-repeat;
     
 }

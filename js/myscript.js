@@ -52,7 +52,21 @@ $(document).ready(function () {
         //pop
         $(".close1, .close2").click(function(){
             $(".pop, .modal").hide();
-        })//
+        }),//
+
+//리사이즈
+$(window).resize(function(){
+    var h = $(this).height()
+    console.log("h : ",h)
+    if(h < 920){
+        $(".container").hide();
+        $("#footer").hide();
+    }else{
+        $(".container").show();
+        $("#footer").show();
+    }
+})//
+
         )//fullpage
     }//if430보다 클 때
 
@@ -68,6 +82,11 @@ $(document).ready(function () {
     })
     $(".sec6_cont h3").addClass("on");
     $(".sec6_cont ul").removeClass("on");
+
+
+
+
+
 }); //jquery
 
 
